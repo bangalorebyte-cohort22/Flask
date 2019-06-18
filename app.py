@@ -5,8 +5,8 @@ app = Flask(__name__)
 def show():
     if request.method == 'POST':
         text = request.form['name']
-        return render_template('index.html', text=text)
-    return render_template('index.html', text='Stranger')
+        return render_template('index.html', text=text , num=5)
+    return render_template('index.html', text='Stranger' , num=5 )
 
 if __name__ == "__main__":
     app.run(debug=True)

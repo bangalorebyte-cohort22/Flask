@@ -1,11 +1,16 @@
 {% extends 'base.html' %}
 
 {% block body %}
+
+    {% for number in range(num) %}
     <h1 class='text-primary'> Hey {{ text }} </h1>
+    {% endfor %}
 
     <form action="/" method='POST'>
         <label>Name :</label>
         <input type="text" name='name'>
         <input type="submit">
     </form>
+
+    
 {% endblock %}
